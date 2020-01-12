@@ -43,3 +43,14 @@ Explanation
 
 There are  positive numbers,  negative numbers, and  zero in the array.
 The proportions of occurrence are positive: , negative:  and zeros: .
+
+#include<iostream>  
+using namespace std;
+int main()
+{
+    
+float arr[100];
+int n;
+float count=0;
+float count2=0;
+float count3=0;
