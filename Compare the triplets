@@ -34,3 +34,43 @@ Return an array of two integers denoting the respective comparison points earned
 
 Sample Input 0
 
+#include<iostream>  
+using namespace std;
+int main()
+{
+    short	int a[3],b[3];
+    short 	int alice=0;
+	short  int bob=0;
+
+  	for(int i=0;i<3;i++)
+	{
+		cin>>a[i];
+	
+	}
+		for(int i=0;i<3;i++)
+	{
+	
+		cin>>b[i];
+	}
+	
+	for(int i=0;i<3;i++)
+	{
+		if(a[i]>b[i])
+		{
+			alice ++;
+			
+		
+		}
+		if else(b[i]>a[i])
+		{
+			bob ++;
+		}
+	}
+	
+    cout<<alice<<" "<<bob;
+    
+    
+    
+    return 0;
+   
+}
