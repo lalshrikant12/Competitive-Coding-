@@ -54,3 +54,29 @@ int n;
 float count=0;
 float count2=0;
 float count3=0;
+cin>>n;
+for(int i=0;i<n;i++)
+{
+    cin>>arr[i];
+}
+for(int i=0;i<n;i++)
+{
+    if(arr[i]>0)
+    {
+    count++;
+}
+else if(arr[i]<0)
+{
+    count2++;
+}
+else if(arr[i]==0)
+{
+    count3++;
+}
+}
+cout<<count/n<<endl;
+cout<<count2/n<<endl;
+cout<<count3/n<<endl;
+
+return 0;
+}
