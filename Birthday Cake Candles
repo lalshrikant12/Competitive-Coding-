@@ -30,3 +30,38 @@ Sample Output 0
 Explanation 0
 
 We have one candle of height , one candle of height , and two candles of height . Your niece only blows out the tallest candles, meaning the candles where . Because there are  such candles, we print  on a new line.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    
+    int n;
+    int count=0;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int max=arr[0];
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>max)
+        {
+          max=arr[i];
+    }
+    }
+    for(int i=0;i<n;i++)
+    {
+    if(arr[i]==max)
+        {
+            count++;
+        }
+    }
+        cout<<count;
+        
+    return 0;    
+    }
+
+    
