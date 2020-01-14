@@ -45,3 +45,37 @@ Cat  will catch the mouse first, so we print Cat B on a new line.
 Query 1: In this query, cats  and  reach mouse  at the exact same time:image
 
 Because the mouse escapes, we print Mouse C on a new line.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int q;
+    cin>>q;
+    int x,y,z;
+    int diffA,diffB;
+    
+
+    for(int i=0;i<q;i++)
+    {
+        cin>>x>>y>>z;
+    diffA=(z-x);
+    diffB=(y-z);
+    if(diffB>diffA)
+    {
+        cout<<"Cat A"<<endl;
+        
+    }
+    else if(diffA>diffB)
+    {
+        cout<<"Cat B"<<endl;
+        
+    }
+    else 
+    {
+        cout<<"Mouse C"<<endl;;
+        
+    }
+}
+    return 0;
+    }
