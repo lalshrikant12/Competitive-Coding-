@@ -46,6 +46,14 @@ Query 1: In this query, cats  and  reach mouse  at the exact same time:image
 
 Because the mouse escapes, we print Mouse C on a new line.
 
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
 #include<iostream>
 using namespace std;
 int main()
@@ -59,8 +67,8 @@ int main()
     for(int i=0;i<q;i++)
     {
         cin>>x>>y>>z;
-    diffA=(z-x);
-    diffB=(y-z);
+    diffA=abs (z-x);
+    diffB=abs (y-z);
     if(diffB>diffA)
     {
         cout<<"Cat A"<<endl;
