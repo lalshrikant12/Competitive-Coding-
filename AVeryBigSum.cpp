@@ -36,7 +36,7 @@ When we add several integer values, the resulting sum might exceed the above ran
 #include <string.h>
 #include <stdlib.h>
 #include <assert.h>
-#include <limits.h>
+
 #include <stdbool.h>
 long sum(long arr[],int n)
     {
