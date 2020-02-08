@@ -58,7 +58,7 @@ public static void main(String[] args)
  {
     Solution obj=new Solution();
     Scanner Sc=new Scanner(System.in);
-    System.out.println("Enter the range");
+
     int n=Sc.nextInt();
     int arr[]=new int[n];
     for(int i=0;i<n;i++)
@@ -68,13 +68,25 @@ public static void main(String[] args)
 }
    for(int i=0;i<n;i++)
 {
-    if(arr[i]%5<3)
-   System.out.println(arr[i]);
+    if(arr[i]<38)
+    {
+        System.out.println(arr[i]);
+    }
+    else{
+        if(arr[i]%5>=3){
+        if(arr[i]%5==3)
+        arr[i]+=2;
+        else
+        arr[i]+=1;
+   System.out.println(arr[i]);}
    else
-System.out.println(arr[i]+3);
+System.out.println(arr[i]);
+    }
 
 }
 
     
      }
 }
+
+
