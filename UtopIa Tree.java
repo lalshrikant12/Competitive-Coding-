@@ -54,3 +54,48 @@ In the second case (), the tree doubles in height and is  meters tall after the 
 In the third case (), the tree doubles its height in spring (, ), then grows a meter in summer (, ), then doubles after the next spring (, ), and grows another meter after summer (, ). Thus, at the end of 4 cycles, its height is  meters.
 
 */
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class Solution
+{
+public static void main(String[] args) {
+
+    int height,n;
+
+    Scanner in = new Scanner(System.in);
+
+    int t = in.nextInt();
+
+    for(int a0 = 0; a0 < t; a0++){
+
+    n = in.nextInt();
+
+    height=1;
+
+    for(int i=0;i<n;i++){
+
+    if (i%2 == 0) 
+    height=height*2;
+
+    else
+     height++;
+
+    }
+
+    System.out.println(height);
+
+    }
+
+    in.close();
+
+}
+}
+
