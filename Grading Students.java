@@ -1,4 +1,4 @@
-HackerLand University has the following grading policy:
+/* HackerLand University has the following grading policy:
 
 Every student receives a  in the inclusive range from  to .
 Any  less than  is a failing grade.
@@ -49,7 +49,7 @@ Student  received a , and the next multiple of  from  is . Since , the student's
 Student  received a , and the next multiple of  from  is . Since , the grade will not be modified and the student's final grade is .
 Student  received a , and the next multiple of  from  is . Since , the student's grade will be rounded to .
 Student  received a grade below , so the grade will not be modified and the student's final grade is .
-
+*/
 
 import java.util.Scanner;
 public class Solution
