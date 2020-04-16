@@ -1,1 +1,1 @@
-//this repo contains contains code for hackerrank conditional problem
+//this repo contains contains solution for Hackerrank problem solving problems
