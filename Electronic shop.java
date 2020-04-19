@@ -50,3 +50,40 @@ Explanation 1
 
 There is no way to buy one keyboard and one USB drive because 4+5>5, so we print -1.
 */
+import java.util.*;
+public class Electronic {
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int d,n,m;
+int max=-1;
+d=sc.nextInt();
+n=sc.nextInt();
+m=sc.nextInt();
+int keyboard[]=new int[n];
+int usb[]=new int[m];
+int left[]=new int[1000];
+
+for(int i=0;i<n;i++)
+{
+keyboard[i]=sc.nextInt();    
+}
+for(int i=0;i<m;i++)
+{
+usb[i]=sc.nextInt();    
+}
+for(int i=0;i<n;i++)
+{
+for(int j=0;j<m;j++)
+{
+if(keyboard[i]+usb[j]<=d && max<keyboard[i]+usb[j])
+{
+    max=keyboard[i]+usb[j];
+}
+}
+}
+System.out.println(max);
+}
+
+}
+
