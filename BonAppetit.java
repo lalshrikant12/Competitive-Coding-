@@ -46,3 +46,34 @@ Bon Appetit
 Explanation 1
 Anna didn't eat item , but she shared the rest of the items with Brian. The total cost of the shared items is  and, split in half, the cost per person is . Because , we print Bon Appetit on a new line.
 */
+import java.util.*;
+public class BonAppetit 
+{
+	public static void main(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int[] arr=new int[n];  
+		int k=sc.nextInt(); //item that anna wont eat
+		
+		int bac,bch;
+		int sum=0;
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+			sum=sum+arr[i]; //total food cost
+		}
+		int b=sc.nextInt(); //actual price that anna pays
+		bch=sum/2;
+		if(b==bch)
+		{
+			System.out.println(bch-(sum-arr[k])/2);
+		}
+		else
+		{
+			System.out.println("Bon Appetit");
+		}
+		
+	}
+
+}
