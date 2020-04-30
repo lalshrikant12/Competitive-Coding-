@@ -53,3 +53,49 @@ Explanation 1
 
 The tallest letter in  is  at . The selection area for this word is .
 */
+import java.util.*;
+
+public class DO {
+    public static void main(String args[])
+    {Scanner sc=new Scanner(System.in);
+
+    
+     //inputing the string
+        
+        int arr[]=new int[26]; //aray for height of each alphabet
+        
+    
+        int count=0;
+        int brr[]=new int[10];
+        char[] alpha= {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'}; //array containg alphabets from a-z
+
+        
+        
+        for(int i=0;i<26;i++)
+        {
+            arr[i]=sc.nextInt(); //inputing length of each alphabet
+        }
+        String s=sc.next();
+        for(int i=0;i<s.length();i++)
+        {
+            for(int j=0;j<26;j++)
+            {
+                if(s.charAt(i)==alpha[j])
+                {
+                    brr[count]=arr[j];
+                    count++;
+                }
+            }
+        }
+    
+        int big=0;
+        for(int i=0;i<count;i++)
+        {
+            if(brr[i]>big)
+            {
+            big=brr[i];    
+            }
+        }
+        System.out.println(big*(s.length()));
+    }
+}
