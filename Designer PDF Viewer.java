@@ -1,4 +1,4 @@
-When you select a contiguous block of text in a PDF viewer, the selection is highlighted with a blue rectangle. In this PDF viewer, each word is highlighted independently. For example:
+/*When you select a contiguous block of text in a PDF viewer, the selection is highlighted with a blue rectangle. In this PDF viewer, each word is highlighted independently. For example:
 
 PDF-highighting.png
 
@@ -52,3 +52,4 @@ Sample Output 1
 Explanation 1
 
 The tallest letter in  is  at . The selection area for this word is .
+*/
