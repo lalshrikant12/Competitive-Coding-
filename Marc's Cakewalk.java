@@ -46,5 +46,42 @@ Sample Output 1
 
 79
 Explanation 1*/
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
 
+public class  Solution{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        n=sc.nextInt();
+    long sum=0;
+    long temp;
+    long[] ar=new long[n];
+    for(int i=0;i<ar.length;i++)
+    {
+        ar[i]=sc.nextInt();
+    }
+    for(int i=0;i<ar.length;i++)
+    {
+        for(int j=i+1;j<ar.length;j++)
+    {
+        if(ar[i]<ar[j])
+        {
+            temp=ar[i];
+            ar[i]=ar[j];
+            ar[j]=temp;
+         }
+    }
+    }
+     long c=0;
+    for(int i=0;i<n;i++)
+    {    
+        c=ar[i];
+        sum+=Math.pow(2,i)*c;
+     }
+     System.out.println(sum);
+    }
+}
 
