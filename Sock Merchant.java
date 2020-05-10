@@ -34,3 +34,52 @@ Explanation
 sock.png
 
 John can match three pairs of socks.*/
+
+
+import java.util.Scanner;
+
+public class SOCK {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n;
+        int count2=0;
+        n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int count=0;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]==arr[j])
+                    count++;
+                
+            }
+        /*    if(count%2!=0)
+            {
+                count=count-1;
+                count=count/2;
+                count2=count2+count;
+            }*/
+         if(count%2==0)
+            {
+                    
+                count2=count2+count;
+            }
+         else if(count%2!=0)
+         {    count=count-1;
+             count2=count2+count;
+         }
+            
+            count=0;
+            
+            
+        }
+        System.out.println(count2/2);
+    }
+
+}
