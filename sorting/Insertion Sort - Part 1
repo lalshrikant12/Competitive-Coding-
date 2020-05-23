@@ -58,3 +58,60 @@ In the 2nd line 6>3, so 6 is shifted one cell to the right.
 In the 3rd line 4>3, so 4 is shifted one cell to the right.
 In the 4th line 2<3, so 2 is placed at position .
 */
+import java.util.*;
+public class Insort
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        try {
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i]=sc.nextInt();
+
+        }
+        int c=arr[n-1];
+        int t=n-1;
+        while(arr[t]>0)
+        {
+        if(arr[t]==arr[0])
+        {
+            arr[t]=c;
+            for(int i=0;i<arr.length;i++)
+            {
+                System.out.print(arr[i]+" ");
+            }
+            break;
+            
+        }
+        if(arr[t-1]>c)
+            {
+                arr[t]=arr[t-1];
+                for(int i=0;i<arr.length;i++)
+                {
+                    System.out.print(arr[i]+" ");
+                }
+                System.out.println();
+                t--;
+            }
+            else if(arr[t-1]<c)
+            {
+                arr[t]=c;
+                for(int i=0;i<arr.length;i++)
+                {
+                    System.out.print(arr[i]+" ");
+                }
+                System.out.println();
+                break;
+            }
+            
+            }
+        }catch(Exception e)
+        {
+            System.out.println(e.getLocalizedMessage());
+        }
+    }
+}
