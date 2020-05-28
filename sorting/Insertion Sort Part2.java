@@ -61,3 +61,35 @@ Test position  against positions : no change.
 Print 
 Test position  against positions , insert  at position  and move others to the right.
 Print */
+import java.util.Scanner;
+public class Insertionsort2 {
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int arr[]=new int[n];
+int temp;
+//try {
+for(int i=0;i<n;i++) //for input
+{
+    arr[i]=sc.nextInt();    
+}
+    for(int i=1;i<n;i++)
+    {
+        temp=arr[i];
+        int j=i-1;
+        while(j>=0 && arr[j]>temp)
+        {
+            arr[j+1]=arr[j];
+            j=j-1;
+        }
+        arr[j+1]=temp;
+        for(int k=0;k<n;k++) 
+        {
+            System.out.print(arr[k]+ " ");
+        }
+        System.out.println();
+    }
+}
+}
+
