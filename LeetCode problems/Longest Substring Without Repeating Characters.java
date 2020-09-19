@@ -61,3 +61,29 @@ Constraints:
 0 <= s.length <= 5 * 104
 s consists of English letters, digits, symbols and spaces.
 */
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        
+        int a_pointer=0;
+        int b_pointer=0;
+        int max=0;
+            HashSet<Character> set=new HashSet();  
+        while(a_pointer<s.length())
+        {
+            if(!set.contains(s.charAt(a_pointer)))
+            {
+                set.add(s.charAt(a_pointer));
+                    a_pointer++;
+                max=Math.max(set.size(),max);
+            }
+            else 
+            {
+                set.remove(s.charAt(b_pointer));
+                b_pointer++;
+            }
+            
+        }
+     return max;   
+    }
+}
