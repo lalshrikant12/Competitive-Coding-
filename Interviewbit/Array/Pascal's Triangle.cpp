@@ -1,10 +1,10 @@
 class Solution {
 public:
-    vector<vector<int>> generate(int numRows) {
+    vector<vector<int>> generate(int A) {
         
         vector<vector<int>> triangle;
         
-        if(numRows==0)
+        if(A==0)
             return tirangle;
         
         vector<int> firstrow;
@@ -12,7 +12,7 @@ public:
         triangle.push_back(firstrow);
         
         
-        for(int i=1;i<numRows;i++)
+        for(int i=1;i<A;i++)
         {
             vector<int> prev_row=triangle.at(i-1);
             vector<int>row;
