@@ -19,7 +19,7 @@ public:
         {
             pq.push(nums[i]);
         }
-        int s=k;
+        
         while(pq.size()!=k)
         {
             pq.pop();
